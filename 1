@@ -1,0 +1,6 @@
+f = open("scientist.txt")
+Scientist = []
+for i in f.readlines():
+    Scientist.append([x for x in i.split("#")])
+Scientist = Scientist[1:]
+print(Scientist)
